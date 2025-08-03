@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мој кутак</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0.75rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Мој кутак</h1>
+    <nav>
+      <a href="#bio">О мени</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#blog">Блог</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+  </header>
+  <main>
+    <section id="bio">
+      <h2>О мени</h2>
+      <p>Овде можеш додати своју биографију, интересовања, и неколико речи о себи.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Мој портфолио</h2>
+      <div class="gallery">
+        <!-- Овде додај слике својих радова -->
+        <img src="example1.jpg" alt="Пример рада 1">
+        <img src="example2.jpg" alt="Пример рада 2">
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Блог</h2>
+      <p>Овде можеш објављивати текстове и фотографије који те инспиришу или представљају твоје мисли.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Контакт</h2>
+      <form>
+        <input type="text" placeholder="Име" required>
+        <input type="email" placeholder="Е-пошта" required>
+        <textarea placeholder="Порука" rows="5" required></textarea>
+        <button type="submit">Пошаљи</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
